@@ -1,14 +1,14 @@
-package com.company;
+package com.company.map;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
-public class HashMapExample {
+public class HashTableExample {
     public static void main(String[] args) {
-        // Creating a HashMap
-        Map<String, Integer> studentScores = new HashMap<>();
+        // Creating a HashTable
+        Hashtable<String, Integer> studentScores = new Hashtable<>();
 
-        // Adding key-value pairs to the HashMap
+        // Adding key-value pairs to the HashTable
         studentScores.put("John", 85);
         studentScores.put("Jane", 92);
         studentScores.put("Doe", 78);
@@ -24,7 +24,7 @@ public class HashMapExample {
         // Removing an element
         studentScores.remove("Doe");
 
-        // Iterating over the HashMap
+        // Iterating over the HashTable
         System.out.println("\nStudent Scores:");
         for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
@@ -33,17 +33,17 @@ public class HashMapExample {
         // Checking if a key exists
         String studentName = "Jane";
         if (studentScores.containsKey(studentName)) {
-            System.out.println("\n" + studentName + " is in the HashMap.");
+            System.out.println("\n" + studentName + " is in the HashTable.");
         } else {
-            System.out.println("\n" + studentName + " is not in the HashMap.");
+            System.out.println("\n" + studentName + " is not in the HashTable.");
         }
 
         // Checking if a value exists
         int scoreToCheck = 90;
         if (studentScores.containsValue(scoreToCheck)) {
-            System.out.println(scoreToCheck + " is a score in the HashMap.");
+            System.out.println(scoreToCheck + " is a score in the HashTable.");
         } else {
-            System.out.println(scoreToCheck + " is not a score in the HashMap.");
+            System.out.println(scoreToCheck + " is not a score in the HashTable.");
         }
     }
 }
